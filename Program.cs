@@ -1,5 +1,6 @@
 using backend.MyEcommAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using MyEcommAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ProductService>();
 
 builder.Services.AddDbContext<MyEcommContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

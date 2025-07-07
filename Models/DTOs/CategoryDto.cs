@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace MyEcommAPI.Models.DTOs
 {
     public class CategoryDto
