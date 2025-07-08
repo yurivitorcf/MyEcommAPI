@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddScoped<CategoryService>();
 
 builder.Services.AddDbContext<MyEcommContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

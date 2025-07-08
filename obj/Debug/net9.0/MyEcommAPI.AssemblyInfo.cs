@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyEcommAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+751a4c00102cb25268417b387a76ec2ca2796e48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d008009695a8067cbfa23803e976f567c8fb1d42")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyEcommAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyEcommAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
