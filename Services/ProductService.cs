@@ -18,12 +18,16 @@ namespace MyEcommAPI.Services
 
         public async Task<List<Product>> GetAllProductsAsync()
         {
-            return await _context.Product.ToListAsync();
+            return await _context.Product
+                .Include(p => p.Category)
+                .ToListAsync();
         }
 
         public async Task<Product> GetProductByIdAsync(int id)
         {
-            return await _context.Product.FindAsync(id);
+            return await _context.Product
+                .Include(p => p.Category)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<List<Product>> GetProductsByCategoryAsync(int categoryId)
