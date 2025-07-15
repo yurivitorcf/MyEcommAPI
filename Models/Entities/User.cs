@@ -1,4 +1,5 @@
 namespace MyEcommAPI.Models.Entities;
+
 public class User
 {
     public int Id { get; set; }
@@ -7,5 +8,5 @@ public class User
     public string Password { get; set; }
     public DateTime CreatedAt { get; set; }
     public List<Order> Orders { get; set; } = new();
-
+    
 }
